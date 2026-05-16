@@ -1,0 +1,179 @@
+:root {
+    --main-color: #009ad8;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+/****************navbar****************/
+nav .navbar-brand p {
+    color: rgb(191, 193, 200);
+    font-weight: 300;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 5px 28px !important;
+    margin-inline: 8px;
+    margin-top: 14px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all .6s ease-in;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.navbar-toggler {
+    border: 1px solid var(--main-color);
+}
+
+.navbar-toggler i {
+    color: var(--main-color);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/****************navbar****************/
+/****************main****************/
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/istockphoto-2199358040-1024x1024.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.search-box {
+    position: relative;
+    z-index: 1000000;
+}
+
+input {
+    width: 85%;
+    background: #1e202b;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.search-btn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    border-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    text-transform: capitalize;
+    min-height: 100%;
+}
+
+.card-header {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    border-radius: 16px 16px 0px 0px !important;
+}
+
+.card-body {
+    padding: 2rem 2rem 0rem;
+    color: white;
+}
+
+.card-footer {
+    padding: 1.25rem 2rem;
+    color: #Bfc1c8;
+}
+
+.card-body .city {
+    font-size: 1.625rem;
+}
+
+.card-body .number {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.card-body .description {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-top: 26px;
+    margin-bottom: 0px;
+}
+
+.card-body .max-number {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.card-body .min-number {
+    font-size: 1.375rem;
+    color: #Bfc1c8;
+}
+
+.card-footer img {
+    width: 20px;
+    margin-right: 5px;
+}
+/****************main****************/
+/****************loader****************/
+.load {
+    position: fixed;
+    inset: 0;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.double-loader1, .double-loader2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-loader2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+    0%, 100% { 
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% { 
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+/****************loader****************/
